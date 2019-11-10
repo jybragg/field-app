@@ -18,7 +18,7 @@ https://ammanimman-fieldapp.herokuapp.com/
 ## Developer Details 
 Jasmin Bragg, James Mulligan, Mark McGee, Will Yurkow, and Jamie Ferrugiaro
 
-### If you'd like find out more about us:
+### If you'd like to find out more about us:
 
 - [Jamie Ferrugiaro](https://www.linked.in/in/jamiekaren)
 - [Jasmin Bragg](www.linkedin.com/in/jasmin-bragg)
