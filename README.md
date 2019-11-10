@@ -1,6 +1,6 @@
 # Amman Imman Field Training App
 
-Amman Imman is a non-profit NGO that works in the Azawak region of Africa, in between Niger and Mali. This was a collaborative project that allows local field nurses and team members to train indigenous peoples on multiple health and sanitation practices that otherwise would not have been available to them. We used visual representations as a universal communicator. 
+Amman Imman is a non-profit NGO that works in the Azawak region of Africa, in between Niger and Mali. This is a collaborative project that allows local field nurses and team members to train individuals on multiple health and sanitation practices that otherwise would not have been available to them. We used visual representations as a universal communicator. 
 
 ## Development and Technical Details
 
@@ -15,7 +15,7 @@ _This app uses:_
 ### Link to the deployed app: 
 https://ammanimman-fieldapp.herokuapp.com/
 
-## Developer Details | 
+## Developer Details 
 Jasmin Bragg, James Mulligan, Mark McGee, Will Yurkow, and Jamie Ferrugiaro
 
 ### If you'd like find out more about us:
