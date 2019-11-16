@@ -12,6 +12,16 @@ _This app uses:_
 - MongoDB/Mongoose
 - Axios
 
+### After logging in, the user has 3 lesson options:
+![Image of initial inventory](/client/src/media/trainerpg.png)
+
+### Once, the user clicks on an image option, a dynamic image slider appears. Below is a screenshot of the tooth brushing lesson:
+![Image of initial inventory](/client/src/media/brush.png)
+
+### Here is screenshot of a different lesson option that displays images of Malaria prevention methods:
+![Image of initial inventory](/client/src/media/net.png)
+
+
 ### Link to the deployed app: 
 https://ammanimman-fieldapp.herokuapp.com/
 
