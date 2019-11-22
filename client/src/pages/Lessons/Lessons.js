@@ -27,43 +27,28 @@ class Lessons extends Component {
         }
     };
 
-
     render() {
 
-
-        // const properties = {
-        //     duration: 5000,
-        //     transitionDuration: 500,
-        //     infinite: true,
-        //     indicators: true,
-        //     arrows: true,
-        //     autoplay: false,
-        //     onChange: (oldIndex, newIndex) => {
-        //         console.log(`slide transition from ${oldIndex} to ${newIndex}`);
-        //     }
-        // }
-
-
         return (
-            
-            <div className="slide-container">
-              
-                <Slide {...this.state.properties}>
 
-                    
+            <div className="container">
+                <a type="button" className="btn btn-primary text-expanded" href="/trainer">Back</a>
+         
+                <div className="slide-container">
 
-                    {this.state.lessonArray.map (image =>
-                    <div key="" className="each-slide">
-                        <div style={{ 'backgroundImage': `url(${image})` }}>
-                        <span>Lesson One</span>
-                        </div>
-                    </div>
-                   
-                    
-                    )}
-                </Slide>
+                    <Slide {...this.state.properties}>
+
+                        {this.state.lessonArray.map(image =>
+                            <div key="" className="each-slide">
+                                <div style={{ 'backgroundImage': `url(${image})` }}>
+                                    <span>Lesson One</span>
+                                </div>
+                            </div>
+                            
+                        )}
+                    </Slide>
+                </div>
             </div>
-
         )
     }
 

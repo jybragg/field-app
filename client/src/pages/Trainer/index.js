@@ -56,13 +56,13 @@ class Trainer extends Component {
       }
     };
     // this._onButtonClick = this._onButtonClick.bind(this);
-  
+
   }
 
 
   buttonBackLessons = () => {
     console.log("Button working!");
-    this.setState({showComponent: false});
+    this.setState({ showComponent: false });
   }
 
   _onButtonClick = (image) => {
@@ -79,8 +79,8 @@ class Trainer extends Component {
         let lesson = entry.lessons;
         console.log("This is our new lesson array", lesson);
 
-        this.setState({currentLesson:lesson});
-       
+        this.setState({ currentLesson: lesson });
+
         this.setState({
           showComponent: true,
         });
@@ -89,7 +89,7 @@ class Trainer extends Component {
 
     })
 
-   
+
   }
 
   render = () => {
@@ -100,6 +100,8 @@ class Trainer extends Component {
             {this.state.showComponent ?
 
               <div className="slide-container mt-5 ">
+                <center><button type="button" className="btn btn-primary" onClick={(event) => this.buttonBackLessons(event)}>Back to lessons</button></center>
+                <br /><br />
                 <Slide {...this.state.properties}>
                   {this.state.currentLesson.map(image =>
                     <div key="" className="each-slide">
@@ -108,8 +110,8 @@ class Trainer extends Component {
                     </div>
                   )}
                 </Slide>
-                <br></br>
-               <center><button type="button" onClick={(event) =>this.buttonBackLessons(event)}>Back to lessons</button></center>
+
+
               </div>
 
 

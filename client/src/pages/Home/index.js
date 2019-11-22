@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
 import Trainer from '../Trainer';
-// import handleLogout from './Home'
 
 import {
   getFromStorage,
@@ -85,11 +84,9 @@ class Home extends Component {
   }
 
 
-
-
   onSignUp() {
 
-    // Grab state
+    // Grab the state
     const {
       signUpEmail,
       signUpPassword,
@@ -130,14 +127,13 @@ class Home extends Component {
   }
 
   componentDidUpdate() {
-    if(this.props.loggedin === false && this.state.token.length > 0){
+    if (this.props.loggedin === false && this.state.token.length > 0) {
       this.logout();
     }
   }
 
-
   onSignIn() {
-    // Grab state
+    // Grab the state
     const {
       signInEmail,
       signInPassword,
@@ -148,7 +144,6 @@ class Home extends Component {
     });
 
     // Post request to backend
-
     fetch('/api/account/signin', {
       method: 'POST',
       headers: {
@@ -172,7 +167,7 @@ class Home extends Component {
             token: json.token,
           });
           // Call storeToken
-          // console.log(token)
+          // console.log(token) //for testing
         } else {
           this.setState({
             signInError: json.message,
@@ -181,12 +176,6 @@ class Home extends Component {
         }
       });
   }
-
-  // handleLogoutForReal(){
-  //   this.setState({
-  //     loggingOut: true
-  //   })
-  // }
 
   logout() {
     // this.setState({
@@ -243,7 +232,9 @@ class Home extends Component {
                 <p>{signInError}</p>
               ) : (null)
             }
-            <p className="mt-5">Sign In</p>
+            <hr class="my-4"></hr>
+            <h2 className="mt-5">Welcome Back</h2>
+            <br />
             <input
               className="text-center"
               type="email"
@@ -261,9 +252,16 @@ class Home extends Component {
             />
             <br />
             <button className="mt-2 btn btn-primary" onClick={this.onSignIn}>Sign In</button>
+            <br />
+            <br />
+            <a class="d-block text-center mt-2" href="/trainer">Sign in as Guest</a>
+            <hr class="my-4"></hr>
           </div>
           <br />
           <br />
+
+          {/* Sign up is commented out for guest ligin visits. In future version, only admin can sign in
+          
           <div>
             {
               (signUpError) ? (
@@ -286,33 +284,19 @@ class Home extends Component {
               onChange={this.onTextboxChangeSignUpPassword}
             /><br />
             <button className="mt-2 btn btn-primary" onClick={this.onSignUp}>Sign Up</button>
-          </div>
+          </div> */}
 
         </div>
       );
     }
-    // if (loggingOut) {
-      // return (
-      //   <div className="text-center">
-      //     <p>Account</p>
-      //     <button className="btn btn-primary" onClick={this.logout}>Logout</button>
-      //   </div>
-      // )
-    // }
+
     return (
       <>
         <Trainer />
       </>
     );
-    
-    
+
   }
 }
-
-// export const handleLogout = () => {
-  
-//  this.handleLogoutForReal();
-
-// }
 
 export default Home;
