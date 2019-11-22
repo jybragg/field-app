@@ -102,61 +102,83 @@ class Trainer extends Component {
               <div className="slide-container mt-5 ">
                 <center><button type="button" className="btn btn-primary" onClick={(event) => this.buttonBackLessons(event)}>Back to lessons</button></center>
                 <br /><br />
-                <Slide {...this.state.properties}>
-                  {this.state.currentLesson.map(image =>
-                    <div key="" className="each-slide">
-                      <div style={{ 'backgroundImage': `url(${image})` }}>
+
+                  <Slide {...this.state.properties}>
+                    {this.state.currentLesson.map(image =>
+                      <div key="" className="each-slide">
+                        <div style={{ 'backgroundImage': `url(${image})` }}>
+                        </div>
+                      </div>
+                    )}
+                  </Slide>
+
+              </div>
+
+              :
+
+              <div class="album py-5 bg-light">
+                <div class="container">
+                  <div class="row">
+
+                    <div class="col-md-4">
+                      <div class="card mb-4 shadow-sm">
+                        <card className="mr-5">
+                          <img
+                            onClick={(image) => this._onButtonClick(image)}
+                            id="lessonOne"
+                            src={BrushThumb}
+                            alt="WashingHands"
+                            style={{
+                              width: 400,
+                              height: 250,
+                              position: "right",
+                              bottom: this.props.bottom
+                            }}
+                          />
+                        </card>
                       </div>
                     </div>
-                  )}
-                </Slide>
-              </div>
-              :
-              <div className="text-center mt-5">
-                <card className="mr-5">
-                  <img
-                    onClick={(image) => this._onButtonClick(image)}
-                    id="lessonOne"
-                    src={BrushThumb}
-                    alt="WashingHands"
-                    style={{
-                      width: 400,
-                      height: 250,
-                      position: "right",
-                      bottom: this.props.bottom
-                    }}
-                  />
-                </card>
 
-                <card className="mr-5">
-                  <img
-                    onClick={(image) => this._onButtonClick(image)}
-                    id="lessonTwo"
-                    src={WashThumb}
-                    alt="WashingHands"
-                    style={{
-                      width: 400,
-                      height: 250,
-                      position: "left",
-                      bottom: this.props.bottom
-                    }}
-                  />
-                </card>
+                    <div class="col-md-4">
+                      <div class="card mb-4 shadow-sm">
+                        <card className="mr-5">
+                          <img
+                            onClick={(image) => this._onButtonClick(image)}
+                            id="lessonTwo"
+                            src={WashThumb}
+                            alt="WashingHands"
+                            style={{
+                              width: 400,
+                              height: 250,
+                              position: "left",
+                              bottom: this.props.bottom
+                            }}
+                          />
+                        </card>
+                      </div>
+                    </div>
 
-                <card>
-                  <img
-                    onClick={(image) => this._onButtonClick(image)}
-                    id="lessonThree"
-                    src={BugsThumb}
-                    alt="WashingHands"
-                    style={{
-                      width: 400,
-                      height: 250,
-                      position: "relative",
-                      bottom: this.props.bottom
-                    }}
-                  />
-                </card>
+                    <div class="col-md-4">
+                      <div class="card mb-4 shadow-sm">
+                        <card>
+                          <img
+                            onClick={(image) => this._onButtonClick(image)}
+                            id="lessonThree"
+                            src={BugsThumb}
+                            alt="WashingHands"
+                            style={{
+                              width: 400,
+                              height: 250,
+                              position: "relative",
+                              bottom: this.props.bottom
+                            }}
+                          />
+                        </card>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
               </div>
             }
 

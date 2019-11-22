@@ -31,22 +31,24 @@ class Lessons extends Component {
 
         return (
 
-            <div className="container">
+            <div className="container justify-content-center">
                 <a type="button" className="btn btn-primary text-expanded" href="/trainer">Back</a>
-         
+
                 <div className="slide-container">
+                    <div className="row">
 
-                    <Slide {...this.state.properties}>
+                        <Slide {...this.state.properties}>
 
-                        {this.state.lessonArray.map(image =>
-                            <div key="" className="each-slide">
-                                <div style={{ 'backgroundImage': `url(${image})` }}>
-                                    <span>Lesson One</span>
+                            {this.state.lessonArray.map(image =>
+                                <div key="" className="each-slide">
+                                    <div style={{ 'backgroundImage': `url(${image})` }}>
+                                        <span>Lesson One</span>
+                                    </div>
                                 </div>
-                            </div>
-                            
-                        )}
-                    </Slide>
+                            )}
+                        </Slide>
+
+                    </div>
                 </div>
             </div>
         )
