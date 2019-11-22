@@ -1,17 +1,14 @@
 import React from "react";
-import School from "../../media/ammanschool.jpg";
+// import School from "../../media/ammanschool.jpg";
+import "./style.css";
+
 
 const Login = () => {
  return (
-   <div>
-     <img
-       src={School}
-       style={{
-         position: "absolute",
-         height: "100%",
-         width: "100%"
-       }}
-     />
+   <div className="container-fluid home">
+    <div  className="login">
+
+    </div>
    </div>
  );
 };

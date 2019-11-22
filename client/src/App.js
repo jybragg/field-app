@@ -42,7 +42,7 @@ class App extends Component { // Write as class
     return (
       <Router>
         {/* Pass token from state */}
-        < Nav token={this.state.token} logOut={this.logOut} />
+        <Nav token={this.state.token} logOut={this.logOut} />
         <Switch>
           <Route exact path="/" component={Login} />
           <Route path="/login" render={() => <Home loggedin={this.state.loggedin}  storeToken={this.storeToken} />} />
