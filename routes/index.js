@@ -1,14 +1,9 @@
-// const path = require("path");
-// const router = require("express").Router();
-// const apiRoutes = require("./api");
+const fs = require('fs');
+const path = require('path');
 
-
-
-// //BOILERPLATE....needs to be changed
-// // If no API routes are hit, send the React app
-// router.use(function(req, res) {
-//     res.sendFile(path.join(__dirname, "../client/build/index.html"));
-//   });
-  
-//   module.exports = router;
-  
+module.exports = (app) => {
+  // API routes
+  fs.readdirSync(__dirname + '/api/').forEach((file) => {
+    require(`./api/${file.substr(0, file.indexOf('.'))}`)(app);
+  });
+};

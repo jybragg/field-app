@@ -1,26 +1,26 @@
 // import dependences and data
 import React, { Component } from "react";
 import { Slide } from 'react-slideshow-image';
-import BrushThumb from '../media/lesson1/lesson1-thumbnail.png';
-import Brush from '../media/lesson1/brush.png';
-import Brush1 from '../media/lesson1/brush1.png';
-import Brush2 from '../media/lesson1/brush2.png';
-import Brush3 from '../media/lesson1/brush3.png';
-import Brush4 from '../media/lesson1/brush4.png';
+import BrushThumb from '../../media/lesson1/lesson1-thumbnail.png';
+import Brush from '../../media/lesson1/brush.png';
+import Brush1 from '../../media/lesson1/brush1.png';
+import Brush2 from '../../media/lesson1/brush2.png';
+import Brush3 from '../../media/lesson1/brush3.png';
+import Brush4 from '../../media/lesson1/brush4.png';
 
-import WashThumb from '../media/lesson2/lesson2-thumbnail.png';
-import Wash1 from '../media/lesson2/wash1.png';
-import Wash2 from '../media/lesson2/wash2.png';
-import Wash3 from '../media/lesson2/wash3.png';
-import Wash4 from '../media/lesson2/wash4.png';
+import WashThumb from '../../media/lesson2/lesson2-thumbnail.png';
+import Wash1 from '../../media/lesson2/wash1.png';
+import Wash2 from '../../media/lesson2/wash2.png';
+import Wash3 from '../../media/lesson2/wash3.png';
+import Wash4 from '../../media/lesson2/wash4.png';
 // import Wash3 from '../media/lesson2/wash-hands.jpg';
 
-import BugsThumb from '../media/lesson3/lesson3-thumbnail.png';
-import Bugs1 from '../media/lesson3/bug1.png';
-import Bugs2 from '../media/lesson3/bug2.png';
-import Bugs3 from '../media/lesson3/bug3.png';
-import Bugs4 from '../media/lesson3/bug4.png';
-import Bugs5 from '../media/lesson3/bug5.png';
+import BugsThumb from '../../media/lesson3/lesson3-thumbnail.png';
+import Bugs1 from '../../media/lesson3/bug1.png';
+import Bugs2 from '../../media/lesson3/bug2.png';
+import Bugs3 from '../../media/lesson3/bug3.png';
+import Bugs4 from '../../media/lesson3/bug4.png';
+import Bugs5 from '../../media/lesson3/bug5.png';
 
 
 const allLessons = [{

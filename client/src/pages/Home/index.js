@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
-import Trainer from '../../pages/Trainer';
+import Trainer from '../Trainer';
 // import handleLogout from './Home'
 
 import {
