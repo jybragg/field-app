@@ -22,6 +22,7 @@ import Bugs3 from '../../media/lesson3/bug3.png';
 import Bugs4 from '../../media/lesson3/bug4.png';
 import Bugs5 from '../../media/lesson3/bug5.png';
 
+import "./style.css";
 
 const allLessons = [{
   name: "lessonOne",
@@ -86,10 +87,7 @@ class Trainer extends Component {
         });
 
       }
-
     })
-
-
   }
 
   render = () => {
@@ -102,18 +100,16 @@ class Trainer extends Component {
               <div className="slide-container mt-5 ">
                 <center><button type="button" className="btn btn-primary" onClick={(event) => this.buttonBackLessons(event)}>Back to lessons</button></center>
                 <br /><br />
-
-                  <Slide {...this.state.properties}>
-                    {this.state.currentLesson.map(image =>
-                      <div key="" className="each-slide">
-                        <div style={{ 'backgroundImage': `url(${image})` }}>
-                        </div>
+                <Slide {...this.state.properties}>
+                  {this.state.currentLesson.map(image =>
+                    <div key="" className="each-slide ">
+                      <div style={{ 'backgroundImage': `url(${image})` }}>
                       </div>
-                    )}
-                  </Slide>
-
+                    </div>
+                  )}
+                </Slide>
               </div>
-
+              
               :
 
               <div class="album py-5 bg-light">

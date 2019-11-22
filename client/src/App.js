@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Trainer from './pages/Trainer/index';
 import Login from './components/Login/Login';
 import './components/style/style.css'
-import Slideshow from './pages/Lessons/Lessons';
+// import Slideshow from './pages/Lessons/Lessons';
 
 class App extends Component { 
   // State goes here = {token: ''}
