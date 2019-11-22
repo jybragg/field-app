@@ -9,7 +9,7 @@ import Login from './components/Login/Login';
 import './components/style/style.css'
 import Slideshow from './pages/Lessons/Lessons';
 
-class App extends Component { // Write as class
+class App extends Component { 
   // State goes here = {token: ''}
   // state = {
   //   token: '',
@@ -41,12 +41,10 @@ class App extends Component { // Write as class
   render() {
     return (
       <Router>
-        {/* Pass token from state */}
         <Nav />
         <Switch>
           <Route exact path="/" component={Login} />
           <Route path="/login"  component={Home} />
-          {/* <Route path="/logout" render={() => <Home loggedin={this.state.loggedin}  storeToken={this.storeToken} />} /> */}
           <Route path="/trainer" component={Trainer} />
           <Route component={NotFound} />
         </Switch>

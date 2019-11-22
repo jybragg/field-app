@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import 'whatwg-fetch';
-import Trainer from '../Trainer';
+// import Trainer from '../Trainer';
 
 // import {
 //   getFromStorage,
@@ -255,6 +256,7 @@ class Home extends Component {
           <br />
           <br />
           <a class="d-block text-center mt-2" href="/trainer">Sign in as Guest</a>
+          <Link className=" ml-auto mr-5" to="/trainer">Sign in as Guest</Link>
           <hr class="my-4"></hr>
         </div>
         <br />
@@ -290,11 +292,11 @@ class Home extends Component {
     );
     // }
 
-    return (
-      <>
-        <Trainer />
-      </>
-    );
+    // return (
+    //   <>
+    //     <Trainer />
+    //   </>
+    // );
 
   }
 }
