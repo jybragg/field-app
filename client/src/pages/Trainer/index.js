@@ -110,18 +110,13 @@ class Trainer extends Component {
                     </div>
                   )}
                 </Slide>
-
-
               </div>
-
-
               :
               <div className="text-center mt-5">
                 <card className="mr-5">
                   <img
                     onClick={(image) => this._onButtonClick(image)}
                     id="lessonOne"
-
                     src={BrushThumb}
                     alt="WashingHands"
                     style={{
@@ -131,7 +126,6 @@ class Trainer extends Component {
                       bottom: this.props.bottom
                     }}
                   />
-
                 </card>
 
                 <card className="mr-5">

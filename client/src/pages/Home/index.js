@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import 'whatwg-fetch';
 import Trainer from '../Trainer';
 
-import {
-  getFromStorage,
-  setInStorage,
-} from '../../utils/storage';
+// import {
+//   getFromStorage,
+//   setInStorage,
+// } from '../../utils/storage';
 
 class Home extends Component {
   // constructor(props) {

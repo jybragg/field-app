@@ -11,19 +11,19 @@ import Slideshow from './pages/Lessons/Lessons';
 
 class App extends Component { // Write as class
   // State goes here = {token: ''}
-  state = {
-    token: '',
-    loggedin: false
-  };
+  // state = {
+  //   token: '',
+  //   loggedin: false
+  // };
 
-  storeToken = (token) => {
-    // setState with token
-    // console.log(token)
-    this.setState({
-      token: token,
-      loggedin:true
-    })
-  }
+  // storeToken = (token) => {
+  //   // setState with token
+  //   // console.log(token)
+  //   this.setState({
+  //     token: token,
+  //     loggedin:true
+  //   })
+  // }
 
   // clearToken = (token) => {
   //   this.setState({
@@ -31,22 +31,22 @@ class App extends Component { // Write as class
   //   })
   // }
 
-  logOut = () => {
-    this.setState({
-      loggedin: false,
-      token: ''
-    })
-  }
+  // logOut = () => {
+  //   this.setState({
+  //     loggedin: false,
+  //     token: ''
+  //   })
+  // }
 
   render() {
     return (
       <Router>
         {/* Pass token from state */}
-        <Nav token={this.state.token} logOut={this.logOut} />
+        <Nav />
         <Switch>
           <Route exact path="/" component={Login} />
-          <Route path="/login" render={() => <Home loggedin={this.state.loggedin}  storeToken={this.storeToken} />} />
-          <Route path="/logout" render={() => <Home loggedin={this.state.loggedin}  storeToken={this.storeToken} />} />
+          <Route path="/login"  component={Home} />
+          {/* <Route path="/logout" render={() => <Home loggedin={this.state.loggedin}  storeToken={this.storeToken} />} /> */}
           <Route path="/trainer" component={Trainer} />
           <Route component={NotFound} />
         </Switch>
