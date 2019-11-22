@@ -255,8 +255,7 @@ class Home extends Component {
           <button className="mt-2 btn btn-primary" onClick={this.onSignIn}>Sign In</button>
           <br />
           <br />
-          <a class="d-block text-center mt-2" href="/trainer">Sign in as Guest</a>
-          <Link className=" ml-auto mr-5" to="/trainer">Sign in as Guest</Link>
+          <Link className="ml-auto text-center" to="/trainer">Sign in as Guest</Link>
           <hr class="my-4"></hr>
         </div>
         <br />
