@@ -26,6 +26,8 @@ _This app uses:_
 ### Link to the deployed app: 
 https://ammanimman-fieldapp.herokuapp.com/
 
+https://immanfieldapp.herokuapp.com/
+
 ## Developer Details 
 Jasmin Bragg, James Mulligan, Mark McGee, Will Yurkow, and Jamie Ferrugiaro
 
